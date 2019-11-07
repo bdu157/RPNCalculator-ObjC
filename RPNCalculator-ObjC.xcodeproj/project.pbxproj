@@ -14,6 +14,7 @@
 		0B75C623237410AE000D2453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B75C621237410AE000D2453 /* LaunchScreen.storyboard */; };
 		0B75C626237410AE000D2453 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C625237410AE000D2453 /* main.m */; };
 		0B75C62F237412BF000D2453 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C62E237412BF000D2453 /* CalculatorViewController.m */; };
+		0B75C637237413FA000D2453 /* DWPStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C636237413FA000D2453 /* DWPStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		0B75C625237410AE000D2453 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B75C62D237412BF000D2453 /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		0B75C62E237412BF000D2453 /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		0B75C635237413FA000D2453 /* DWPStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWPStack.h; sourceTree = "<group>"; };
+		0B75C636237413FA000D2453 /* DWPStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWPStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		0B75C612237410AC000D2453 /* RPNCalculator-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				0B75C633237413C6000D2453 /* Model */,
+				0B75C634237413D1000D2453 /* Model Controller */,
 				0B75C62C23741153000D2453 /* App Lifecycle */,
 				0B75C63223741308000D2453 /* View Controllers */,
 				0B75C631237412F3000D2453 /* Storyboard */,
@@ -106,6 +111,22 @@
 				0B75C62E237412BF000D2453 /* CalculatorViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0B75C633237413C6000D2453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B75C635237413FA000D2453 /* DWPStack.h */,
+				0B75C636237413FA000D2453 /* DWPStack.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B75C634237413D1000D2453 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +201,7 @@
 			files = (
 				0B75C615237410AC000D2453 /* AppDelegate.m in Sources */,
 				0B75C626237410AE000D2453 /* main.m in Sources */,
+				0B75C637237413FA000D2453 /* DWPStack.m in Sources */,
 				0B75C62F237412BF000D2453 /* CalculatorViewController.m in Sources */,
 				0B75C618237410AC000D2453 /* SceneDelegate.m in Sources */,
 			);
