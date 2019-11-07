@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		0B75C615237410AC000D2453 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C614237410AC000D2453 /* AppDelegate.m */; };
 		0B75C618237410AC000D2453 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C617237410AC000D2453 /* SceneDelegate.m */; };
-		0B75C61B237410AC000D2453 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C61A237410AC000D2453 /* ViewController.m */; };
 		0B75C61E237410AC000D2453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B75C61C237410AC000D2453 /* Main.storyboard */; };
 		0B75C620237410AE000D2453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B75C61F237410AE000D2453 /* Assets.xcassets */; };
 		0B75C623237410AE000D2453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B75C621237410AE000D2453 /* LaunchScreen.storyboard */; };
 		0B75C626237410AE000D2453 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C625237410AE000D2453 /* main.m */; };
+		0B75C62F237412BF000D2453 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B75C62E237412BF000D2453 /* CalculatorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +22,13 @@
 		0B75C614237410AC000D2453 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0B75C616237410AC000D2453 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		0B75C617237410AC000D2453 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		0B75C619237410AC000D2453 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B75C61A237410AC000D2453 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0B75C61D237410AC000D2453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B75C61F237410AE000D2453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B75C622237410AE000D2453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B75C624237410AE000D2453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B75C625237410AE000D2453 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0B75C62D237412BF000D2453 /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		0B75C62E237412BF000D2453 /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +61,51 @@
 		0B75C612237410AC000D2453 /* RPNCalculator-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				0B75C62C23741153000D2453 /* App Lifecycle */,
+				0B75C63223741308000D2453 /* View Controllers */,
+				0B75C631237412F3000D2453 /* Storyboard */,
+				0B75C630237412E5000D2453 /* Resources */,
+				0B75C624237410AE000D2453 /* Info.plist */,
+			);
+			path = "RPNCalculator-ObjC";
+			sourceTree = "<group>";
+		};
+		0B75C62C23741153000D2453 /* App Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
 				0B75C613237410AC000D2453 /* AppDelegate.h */,
 				0B75C614237410AC000D2453 /* AppDelegate.m */,
 				0B75C616237410AC000D2453 /* SceneDelegate.h */,
 				0B75C617237410AC000D2453 /* SceneDelegate.m */,
-				0B75C619237410AC000D2453 /* ViewController.h */,
-				0B75C61A237410AC000D2453 /* ViewController.m */,
-				0B75C61C237410AC000D2453 /* Main.storyboard */,
-				0B75C61F237410AE000D2453 /* Assets.xcassets */,
-				0B75C621237410AE000D2453 /* LaunchScreen.storyboard */,
-				0B75C624237410AE000D2453 /* Info.plist */,
 				0B75C625237410AE000D2453 /* main.m */,
 			);
-			path = "RPNCalculator-ObjC";
+			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		0B75C630237412E5000D2453 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B75C61F237410AE000D2453 /* Assets.xcassets */,
+				0B75C621237410AE000D2453 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B75C631237412F3000D2453 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0B75C61C237410AC000D2453 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0B75C63223741308000D2453 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B75C62D237412BF000D2453 /* CalculatorViewController.h */,
+				0B75C62E237412BF000D2453 /* CalculatorViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +178,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B75C61B237410AC000D2453 /* ViewController.m in Sources */,
 				0B75C615237410AC000D2453 /* AppDelegate.m in Sources */,
 				0B75C626237410AE000D2453 /* main.m in Sources */,
+				0B75C62F237412BF000D2453 /* CalculatorViewController.m in Sources */,
 				0B75C618237410AC000D2453 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

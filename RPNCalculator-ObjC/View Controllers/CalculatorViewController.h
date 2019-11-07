@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CalculatorViewController.h
 //  RPNCalculator-ObjC
 //
 //  Created by Dongwoo Pae on 11/7/19.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+@interface CalculatorViewController : UIViewController
 
 @end
 
